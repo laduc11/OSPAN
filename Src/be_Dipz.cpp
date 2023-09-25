@@ -50,9 +50,9 @@ int math_test(vector<pair<string, string>> source, int i, int ID)
     cin >> answer;
     auto end = chrono::steady_clock::now();
     chrono::duration<double> elapsed_seconds = end - start;
-    if (elapsed_seconds.count() > DELAY_TIMER_Q / 1000.0)
+    if (elapsed_seconds.count() > DELAY_TIMER_M / 1000.0)
     {
-        status = "OVER TIME";
+        status = "OVERTIME";
     }
     else
     {
@@ -92,7 +92,7 @@ void vocab_test(vector<string> source, int i, int ID)
 
     system("cls");
     cout << "\n\n\n\t" << source[i];
-    Sleep(DELAY_TIMER_Q);
+    Sleep(DELAY_TIMER_L);
     system("cls");
 }
 

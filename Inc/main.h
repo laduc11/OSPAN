@@ -19,15 +19,12 @@ using namespace std;
 // #define DEBUG
 #define TIENG_VIET
 #define NUM_Q 20
-#define DELAY_TIMER_Q 2000
+#define DELAY_TIMER_M 6000 // Math: 6s
+#define DELAY_TIMER_L 3000 // Language: 3s
 #define DELAY_TIMER_S 500
 #define TOTAL_Q 100
 /*---------------------------------------------------*/
 
 /*Function*/
-// vector<int> choose();
-// vector<pair<string, string>> get_equation();
-// vector<string> get_vocab();
-// int math_test(vector<pair<string, string>> source, vector<int> idx);
 /*---------------------------------------------------*/
 #endif
