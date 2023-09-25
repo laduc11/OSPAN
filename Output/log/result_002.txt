@@ -1,101 +1,101 @@
-ID: 000
+ID: 002
 
-36 + 96 = 100
-Your answer: t
-Solution: FALSE
-Status: TRUE
-
-6 * 4 + 8 = 92
+95 + 36 = 48
 Your answer: t
 Solution: FALSE
 Status: OVERTIME
 
-44 + 27 = 4
-Your answer: d
-Solution: FALSE
-Status: SYNTAX ERROR
-
-20 + 24 = 44
-Your answer: t
-Solution: TRUE
-Status: TRUE
-
-93 + 75 = 168
-Your answer: d
-Solution: TRUE
-Status: SYNTAX ERROR
-
-9 * 5 + 6 = 32
-Your answer: t
-Solution: FALSE
-Status: TRUE
-
-53 + 19 = 120
-Your answer: f
-Solution: FALSE
-Status: FALSE
-
-7 * 6 + 6 = 48
-Your answer: t
-Solution: TRUE
-Status: TRUE
-
-9 * 8 + 2 = 74
-Your answer: f
-Solution: TRUE
-Status: FALSE
-
-7 * 7 + 9 = 102
-Your answer: t
-Solution: FALSE
-Status: TRUE
-
-24 + 42 = 47
-Your answer: f
-Solution: FALSE
-Status: FALSE
-
-3 * 8 + 7 = 31
-Your answer: f
-Solution: TRUE
-Status: FALSE
-
-7 * 6 + 6 = 48
-Your answer: t
-Solution: TRUE
-Status: TRUE
-
-44 + 27 = 4
-Your answer: f
-Solution: FALSE
-Status: FALSE
-
-2 * 9 + 4 = 22
-Your answer: t
-Solution: TRUE
-Status: TRUE
-
 9 * 6 + 3 = 42
 Your answer: f
 Solution: FALSE
+Status: OVERTIME
+
+48 + 54 = 30
+Your answer: f
+Solution: FALSE
 Status: FALSE
 
-59 + 98 = 157
+18 + 94 = 112
 Your answer: t
 Solution: TRUE
 Status: TRUE
+
+36 + 59 = 95
+Your answer: f
+Solution: TRUE
+Status: FALSE
+
+1 * 9 + 5 = 83
+Your answer: t
+Solution: FALSE
+Status: TRUE
+
+49 + 97 = 56
+Your answer: f
+Solution: FALSE
+Status: FALSE
+
+7 * 7 + 9 = 58
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
+2 * 5 + 5 = 15
+Your answer: f
+Solution: TRUE
+Status: FALSE
 
 1 * 5 + 9 = 99
 Your answer: f
 Solution: FALSE
 Status: FALSE
 
-61 + 35 = 96
+56 + 85 = 67
+Your answer: t
+Solution: FALSE
+Status: TRUE
+
+9 * 8 + 2 = 74
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
+5 * 8 + 3 = 43
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
+17 + 69 = 111
+Your answer: f
+Solution: FALSE
+Status: FALSE
+
+1 * 3 + 9 = 12
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
+2 * 2 + 9 = 63
+Your answer: t
+Solution: FALSE
+Status: TRUE
+
+4 + 3 = 7
 Your answer: f
 Solution: TRUE
 Status: FALSE
 
-65 + 28 = 93
+8 * 4 + 6 = 69
+Your answer: t
+Solution: FALSE
+Status: TRUE
+
+36 + 59 = 95
+Your answer: f
+Solution: TRUE
+Status: FALSE
+
+24 + 57 = 81
 Your answer: f
 Solution: TRUE
 Status: FALSE

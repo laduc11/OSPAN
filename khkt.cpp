@@ -70,9 +70,12 @@ int main()
     /*--------------------------------------------------------------------------*/
 
     /*Tạo file để người dùng nhập từ vựng*/
-    result.open("vocab_answer.txt", ios::out);
-    result << "ID: " << string(3 - to_string(ID).length(), '0') + to_string(ID) << "\n\n";
-    result.close();
+    if (selection != 1)
+    {
+        result.open("vocab_answer.txt", ios::out);
+        result << "ID: " << string(3 - to_string(ID).length(), '0') + to_string(ID) << "\n\n";
+        result.close();
+    }
     /*--------------------------------------------------------------------------*/
 
     /*In kết quả ra màn hình*/
