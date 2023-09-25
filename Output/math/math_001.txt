@@ -1,0 +1,102 @@
+ID: 001
+
+7 + 65 = 122
+Your answer: t
+Solution: FALSE
+Status: TRUE
+
+6 * 7 + 3 = 96
+Your answer: f
+Solution: FALSE
+Status: FALSE
+
+60 + 73 = 18
+Your answer: t
+Solution: FALSE
+Status: TRUE
+
+68 + 20 = 88
+Your answer: f
+Solution: TRUE
+Status: FALSE
+
+28 + 70 = 98
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
+2 * 2 + 9 = 63
+Your answer: f
+Solution: FALSE
+Status: FALSE
+
+24 + 42 = 47
+Your answer: t
+Solution: FALSE
+Status: TRUE
+
+1 * 7 + 5 = 12
+Your answer: f
+Solution: TRUE
+Status: FALSE
+
+9 * 8 + 2 = 74
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
+5 * 7 + 6 = 96
+Your answer: f
+Solution: FALSE
+Status: FALSE
+
+36 + 96 = 100
+Your answer: t
+Solution: FALSE
+Status: TRUE
+
+4 * 5 + 3 = 23
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
+4 * 5 + 3 = 23
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
+36 + 96 = 100
+Your answer: f
+Solution: FALSE
+Status: FALSE
+
+2 * 5 + 5 = 15
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
+9 * 5 + 6 = 32
+Your answer: f
+Solution: FALSE
+Status: FALSE
+
+20 + 24 = 44
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
+8 * 9 + 4 = 87
+Your answer: t
+Solution: FALSE
+Status: TRUE
+
+49 + 39 = 88
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
+44 + 33 = 77
+Your answer: t
+Solution: TRUE
+Status: TRUE
+
