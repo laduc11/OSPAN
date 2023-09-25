@@ -1,0 +1,80 @@
+11 + 85 = 13
+Your answer: t
+Solution: FALSE
+Status: TRUE
+9 * 3 + 4 = 87
+Your answer: f
+Solution: FALSE
+Status: FALSE
+38 + 18 = 59
+Your answer: t
+Solution: FALSE
+Status: TRUE
+20 + 24 = 44
+Your answer: f
+Solution: TRUE
+Status: FALSE
+46 + 55 = 101
+Your answer: t
+Solution: TRUE
+Status: TRUE
+5 * 4 + 2 = 40
+Your answer: f
+Solution: FALSE
+Status: FALSE
+72 + 60 = 106
+Your answer: t
+Solution: FALSE
+Status: TRUE
+3 * 8 + 7 = 31
+Your answer: f
+Solution: TRUE
+Status: FALSE
+4 * 1 + 2 = 6
+Your answer: t
+Solution: TRUE
+Status: TRUE
+4 * 2 + 9 = 39
+Your answer: f
+Solution: FALSE
+Status: FALSE
+66 + 59 = 74
+Your answer: t
+Solution: FALSE
+Status: TRUE
+9 * 1 + 2 = 11
+Your answer: f
+Solution: TRUE
+Status: FALSE
+4 * 6 + 4 = 28
+Your answer: t
+Solution: TRUE
+Status: TRUE
+48 + 54 = 30
+Your answer: f
+Solution: FALSE
+Status: FALSE
+8 * 4 + 6 = 38
+Your answer: t
+Solution: TRUE
+Status: TRUE
+4 * 8 + 7 = 57
+Your answer: f
+Solution: FALSE
+Status: FALSE
+65 + 28 = 93
+Your answer: f
+Solution: TRUE
+Status: FALSE
+4 * 8 + 7 = 57
+Your answer: f
+Solution: FALSE
+Status: FALSE
+36 + 59 = 95
+Your answer: t
+Solution: TRUE
+Status: TRUE
+36 + 59 = 95
+Your answer: f
+Solution: TRUE
+Status: FALSE

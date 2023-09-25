@@ -40,7 +40,7 @@ int math_test(vector<pair<string, string>> source, int i)
     string status;
     char answer;
     fstream result;
-    result.open("Ouput/log/result.txt", ios::app);
+    result.open("Output/log/result.txt", ios::app);
 
     cout << "Nếu biểu thức đúng gõ 't', nếu sai gõ 'f'\nSau đó bấm phím Enter\n\n\n";
     cout << source[i].first << endl;
@@ -83,7 +83,7 @@ vocabulary test
 void vocab_test(vector<string> source, int i)
 {
     fstream result;
-    result.open("Ouput/participant/000.txt", ios::app);
+    result.open("Output/participant/000.txt", ios::app);
     result << source[i] << '\n';
     result.close();
 
