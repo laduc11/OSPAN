@@ -7,7 +7,7 @@ int main()
     SetConsoleOutputCP(65001);
 #endif
     /*--------------------------Hướng dẫn---------------------------------------*/
-    cout << "Chào mừng tới với chương trình của Vịt ngoo\n";
+    cout << "Chào mừng tới chương trình của Vịt ngoo\n";
     cout << "Vịt chỉ muốn nói là tớ yêu bé Dipz nhìu lém ó\n";
     system("pause");
     /*--------------------------------------------------------------------------*/
