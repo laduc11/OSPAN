@@ -20,3 +20,6 @@ word
 side
 government
 number
+
+Result: 0/20
+Correct: 0	Wrong: 20

@@ -162,3 +162,35 @@ void display(string path)
     }
     file.close();
 }
+/*
+check vocabulary answer
+*/
+int check_vocab(string path1, string path2)
+{
+    int correct = 0;
+    string temp = "";
+    vector<string> answer;
+    fstream file(path1, ios::in);
+    getline(file, temp);
+    getline(file, temp);
+    for (int i = 0; i < NUM_Q; i++)
+    {
+        getline(file, temp);
+        answer.push_back(temp);
+        temp = "";
+    }
+    file.close();
+
+    file.open(path2, ios::in);
+    getline(file, temp);
+    getline(file, temp);
+    for (int i = 0; i < NUM_Q; i++)
+    {
+        getline(file, temp);
+        if (answer[i] == temp)
+            correct++;
+        temp = "";
+    }
+    file.close();
+    return correct;
+}

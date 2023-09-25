@@ -1,0 +1,25 @@
+ID: 004
+
+way
+power
+student
+program
+right
+idea
+school
+teacher
+level
+car
+week
+air
+girl
+day
+party
+law
+question
+member
+word
+program
+
+Result: 0/20
+Correct: 0	Wrong: 20

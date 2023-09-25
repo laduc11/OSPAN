@@ -6,6 +6,7 @@
         "algorithm": "cpp",
         "xstring": "cpp",
         "utility": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "string": "cpp"
     }
 }

@@ -74,11 +74,28 @@ int main()
         result.open("vocab_answer.txt", ios::out);
         result << "ID: " << string(3 - to_string(ID).length(), '0') + to_string(ID) << "\n\n";
         result.close();
+        system("notepad vocab_answer.txt");
     }
     /*--------------------------------------------------------------------------*/
 
-    /*In kết quả ra màn hình*/
-    cout << "Correct: " << correct << "/" << NUM_Q << endl;
+    /*Kiểm tra kết quả ghi nhớ từ vựng*/
+    unsigned int correct_word = check_vocab("vocab_answer.txt", file_name);
+    /*--------------------------------------------------------------------------*/
+
+    /*In kết quả toán học ra màn hình*/
+    if (selection != 2)
+    {
+        cout << "Kết quả bài kiểm tra toán học\n";
+        cout << "Correct: " << correct << "/" << NUM_Q << endl;
+    }
+    /*--------------------------------------------------------------------------*/
+
+    /*In kết quả ghi nhớ từ vựng ra màn hình*/
+    if (selection != 1)
+    {
+        cout << "Kết quả bài kiểm tra ghi nhớ\n";
+        cout << "Correct: " << correct_word << "/" << NUM_Q << endl;
+    }
     /*--------------------------------------------------------------------------*/
 
     /*Lời cảm ơn*/
