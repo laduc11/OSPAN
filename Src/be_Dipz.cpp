@@ -33,14 +33,15 @@ input:
 ouput:
     Correct or Wrong
 */
-int math_test(vector<pair<string, string>> source, int i)
+int math_test(vector<pair<string, string>> source, int i, int ID)
 {
     int correct = 0;
     system("cls");
     string status;
     char answer;
     fstream result;
-    result.open("Output/log/result.txt", ios::app);
+    string file_name = "Output/log/result_" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
+    result.open(file_name, ios::app);
 
     cout << "Nếu biểu thức đúng gõ 't', nếu sai gõ 'f'\nSau đó bấm phím Enter\n\n\n";
     cout << source[i].first << endl;
@@ -80,10 +81,11 @@ int math_test(vector<pair<string, string>> source, int i)
 /*
 vocabulary test
 */
-void vocab_test(vector<string> source, int i)
+void vocab_test(vector<string> source, int i, int ID)
 {
     fstream result;
-    result.open("Output/participant/000.txt", ios::app);
+    string file_name = "Output/participant/" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
+    result.open(file_name, ios::app);
     result << source[i] << '\n';
     result.close();
 
@@ -127,4 +129,21 @@ vector<string> get_vocab()
     }
     vocab_source.close();
     return source;
+}
+/*
+get ID and update current state
+*/
+int get_ID()
+{
+    fstream current_state;
+    current_state.open("Input/current_state.txt", ios::in);
+    string temp;
+    int ID;
+    current_state >> temp >> ID;
+    current_state.close();
+    current_state.open("Input/current_state.txt", ios::out);
+    temp = "ID:\t" + string(3 - to_string(ID + 1).length(), '0') + to_string(ID + 1);
+    current_state << temp;
+    current_state.close();
+    return ID;
 }

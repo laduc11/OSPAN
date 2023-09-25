@@ -12,6 +12,10 @@ int main()
     system("pause");
     /*--------------------------------------------------------------------------*/
 
+    /*Đăng ký ID người tham gia*/
+    const int ID = get_ID();
+    /*--------------------------------------------------------------------------*/
+
     /*đảo thứ tự câu hỏi*/
     vector<int> idx_select = choose();
     /*--------------------------------------------------------------------------*/
@@ -23,17 +27,16 @@ int main()
     /*--------------------câu hỏi từ vựng---------------------------------------*/
     vector<string> source_vocab = get_vocab();
     /*--------------------------------------------------------------------------*/
-#if 1
-    /*Bắt đầu làm bài*/
+
+    /*Bắt đầu làm bài kiểm tra*/
     int correct = 0;
     for (int i = 0; i < NUM_Q; i++)
     {
-        correct += math_test(source_equation, idx_select[i]);
-        vocab_test(source_vocab, idx_select[i]);
+        correct += math_test(source_equation, idx_select[i], ID);
+        vocab_test(source_vocab, idx_select[i], ID);
     }
     cout << "Correct: " << correct << "/" << NUM_Q << endl;
     /*--------------------------------------------------------------------------*/
-#endif
 
     /*Lời cảm ơn*/
     cout << "Cảm ơn đã tham gia khảo sát\n";
@@ -49,11 +52,9 @@ int main()
     // cout << source[0].first << " " << source[0].second << endl;
 #endif
 
-    /*--------------------câu hỏi từ vựng---------------------------------------*/
+    /*Cập nhật lại ID cho người dùng kết tiếp*/
     /*--------------------------------------------------------------------------*/
 
-    /*----------------------xuất đáp án từ vựng ra file text--------------------*/
-    /*--------------------------------------------------------------------------*/
     cout << "Press any key to finish . . .";
     getchar();
     return 0;

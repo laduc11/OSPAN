@@ -5,6 +5,7 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "xstring": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "iosfwd": "cpp"
     }
 }
