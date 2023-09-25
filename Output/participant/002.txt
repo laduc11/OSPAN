@@ -1,5 +1,4 @@
 ID: 002
 
-
-Result: 9/20
-Correct: 9	Wrong: 11
+Kết quả bài kiểm tra ghi nhớ
+Correct: 0/20

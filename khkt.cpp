@@ -13,11 +13,19 @@ int main()
     /*Đăng ký ID người tham gia*/
     const int ID = get_ID();
     fstream result;
-    string file_name = "Output/participant/" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
+    string file_name;
+
+    file_name = "Output/participant/" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
     result.open(file_name, ios::trunc | ios::out);
     result << "ID: " << string(3 - to_string(ID).length(), '0') + to_string(ID) << "\n\n";
     result.close();
-    file_name = "Output/log/result_" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
+
+    file_name = "Output/vocab/vocab_" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
+    result.open(file_name, ios::trunc | ios::out);
+    result << "ID: " << string(3 - to_string(ID).length(), '0') + to_string(ID) << "\n\n";
+    result.close();
+
+    file_name = "Output/math/math_" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
     result.open(file_name, ios::trunc | ios::out);
     result << "ID: " << string(3 - to_string(ID).length(), '0') + to_string(ID) << "\n\n";
     result.close();
@@ -45,7 +53,8 @@ int main()
     /*--------------------------------------------------------------------------*/
 
     /*Bắt đầu làm bài kiểm tra*/
-    int correct = 0;
+    unsigned int correct = 0;
+    unsigned int correct_word = 0;
     for (int i = 0; i < NUM_Q; i++)
     {
         switch (selection)
@@ -61,11 +70,7 @@ int main()
             vocab_test(source_vocab, idx_select[i], ID);
         }
     }
-    file_name = "Output/participant/" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
-    result.open(file_name, ios::app);
-    result << "\nResult: " << correct << "/" << NUM_Q << endl;
-    result << "Correct: " << correct << "\tWrong: " << NUM_Q - correct << endl;
-    result.close();
+
     /*--------------------------------------------------------------------------*/
 
     /*Tạo file để người dùng nhập từ vựng*/
@@ -79,14 +84,24 @@ int main()
     /*--------------------------------------------------------------------------*/
 
     /*Kiểm tra kết quả ghi nhớ từ vựng*/
-    unsigned int correct_word = check_vocab("vocab_answer.txt", file_name);
+    if (selection != 1)
+    {
+        file_name = "Output/vocab/vocab_" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
+        correct_word = check_vocab("vocab_answer.txt", file_name);
+    }
     /*--------------------------------------------------------------------------*/
+
+    file_name = "Output/participant/" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
 
     /*In kết quả toán học ra màn hình*/
     if (selection != 2)
     {
         cout << "Kết quả bài kiểm tra toán học\n";
-        cout << "Correct: " << correct << "/" << NUM_Q << endl;
+        cout << "Correct: " << correct << "/" << NUM_Q << '\n';
+        result.open(file_name, ios::app);
+        result << "Kết quả bài kiểm tra toán học\n"
+               << "Correct: " << correct << "/" << NUM_Q << "\n\n";
+        result.close();
     }
     /*--------------------------------------------------------------------------*/
 
@@ -94,7 +109,11 @@ int main()
     if (selection != 1)
     {
         cout << "Kết quả bài kiểm tra ghi nhớ\n";
-        cout << "Correct: " << correct_word << "/" << NUM_Q << endl;
+        cout << "Correct: " << correct_word << "/" << NUM_Q << '\n';
+        result.open(file_name, ios::app);
+        result << "Kết quả bài kiểm tra ghi nhớ\n"
+               << "Correct: " << correct_word << "/" << NUM_Q << '\n';
+        result.close();
     }
     /*--------------------------------------------------------------------------*/
 

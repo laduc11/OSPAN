@@ -1,0 +1,22 @@
+ID: 002
+
+place
+friend
+state
+business
+job
+president
+part
+teacher
+education
+kid
+part
+art
+history
+year
+air
+city
+point
+power
+study
+point

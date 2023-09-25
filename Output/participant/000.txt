@@ -1,5 +1,4 @@
 ID: 000
 
-
-Result: 10/20
-Correct: 10	Wrong: 10
+Kết quả bài kiểm tra ghi nhớ
+Correct: 20/20

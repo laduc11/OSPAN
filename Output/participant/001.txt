@@ -1,25 +1,4 @@
 ID: 001
 
-people
-name
-year
-question
-night
-car
-place
-moment
-girl
-kind
-child
-war
-parent
-way
-war
-power
-business
-team
-book
-word
-
-Result: 0/20
-Correct: 0	Wrong: 20
+Kết quả bài kiểm tra ghi nhớ
+Correct: 2/20

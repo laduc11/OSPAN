@@ -40,7 +40,7 @@ int math_test(vector<pair<string, string>> source, int i, int ID)
     string status;
     char answer;
     fstream result;
-    string file_name = "Output/log/result_" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
+    string file_name = "Output/math/math_" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
     result.open(file_name, ios::app);
 
     cout << "Nếu biểu thức đúng gõ 't', nếu sai gõ 'f'\nSau đó bấm phím Enter\n\n\n";
@@ -85,7 +85,7 @@ vocabulary test
 void vocab_test(vector<string> source, int i, int ID)
 {
     fstream result;
-    string file_name = "Output/participant/" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
+    string file_name = "Output/vocab/vocab_" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
     result.open(file_name, ios::app);
     result << source[i] << '\n';
     result.close();
