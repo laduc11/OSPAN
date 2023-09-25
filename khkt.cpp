@@ -7,15 +7,7 @@ int main()
     SetConsoleOutputCP(65001);
 #endif
     /*--------------------------Hướng dẫn---------------------------------------*/
-    fstream guide("Input/guide.txt", ios::in);
-    string guide_script;
-    while (!guide.eof())
-    {
-        getline(guide, guide_script, '\n');
-        cout << guide_script << '\n';
-        guide_script = "";
-    }
-    guide.close();
+    display("Input/guide.txt");
     system("pause");
     /*--------------------------------------------------------------------------*/
 
@@ -44,12 +36,31 @@ int main()
     vector<string> source_vocab = get_vocab();
     /*--------------------------------------------------------------------------*/
 
+    /*Khởi tạo menu của chương trình*/
+    system("cls");
+    display("Input/menu.txt");
+    cout << "Lựa chọn của bạn là ";
+    unsigned int selection = 0;
+    cin >> selection;
+    selection = (selection - 1) % 3 + 1;
+    /*--------------------------------------------------------------------------*/
+
     /*Bắt đầu làm bài kiểm tra*/
     int correct = 0;
     for (int i = 0; i < NUM_Q; i++)
     {
-        correct += math_test(source_equation, idx_select[i], ID);
-        vocab_test(source_vocab, idx_select[i], ID);
+        switch (selection)
+        {
+        case 1:
+            correct += math_test(source_equation, idx_select[i], ID);
+            break;
+        case 2:
+            vocab_test(source_vocab, idx_select[i], ID);
+            break;
+        case 3:
+            correct += math_test(source_equation, idx_select[i], ID);
+            vocab_test(source_vocab, idx_select[i], ID);
+        }
     }
     file_name = "Output/participant/" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
     result.open(file_name, ios::app);

@@ -148,3 +148,17 @@ int get_ID()
     current_state.close();
     return ID;
 }
+/*
+display text file on the console window
+*/
+void display(string path)
+{
+    fstream file(path, ios::in);
+    while (!file.eof())
+    {
+        string line = "";
+        getline(file, line, '\n');
+        cout << line << '\n';
+    }
+    file.close();
+}
