@@ -1,4 +1,4 @@
-#include "Inc/main.h"
+#include "..\Inc\main.h"
 /*
 choose index
 output: 20 vị trí trong bộ dữ liệu 100 câu hỏi

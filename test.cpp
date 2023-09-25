@@ -1,4 +1,4 @@
-#include "Src/be_Dipz.cpp"
+#include "Inc\main.h"
 
 int main()
 {
@@ -7,5 +7,6 @@ int main()
     {
         cout << rand() % 20 << endl;
     }
+
     return 0;
 }

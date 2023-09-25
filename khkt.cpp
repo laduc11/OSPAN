@@ -1,5 +1,5 @@
-#include "Inc/main.h"
-#include "Src/be_Dipz.cpp"
+#include "Inc\main.h"
+#include "Src\be_Dipz.cpp"
 
 int main()
 {
