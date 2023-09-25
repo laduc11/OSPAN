@@ -54,17 +54,18 @@ int math_test(vector<pair<string, string>> source, int i, int ID)
     {
         status = "OVER TIME";
     }
-
-    if (answer == 't')
-        status = "TRUE";
-    else if (answer == 'f')
-        status = "FALSE";
     else
-        status = "SYNTAX ERROR";
+    {
+        if (answer == 't')
+            status = "TRUE";
+        else if (answer == 'f')
+            status = "FALSE";
+        else
+            status = "SYNTAX ERROR";
 
-    if (status == source[i].second)
-        correct++;
-
+        if (status == source[i].second)
+            correct++;
+    }
     if (status == "TRUE" || status == "FALSE")
         cout << source[i].second << endl;
     else

@@ -44,6 +44,14 @@ int main()
         correct += math_test(source_equation, idx_select[i], ID);
         vocab_test(source_vocab, idx_select[i], ID);
     }
+    file_name = "Output/participant/" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
+    result.open(file_name, ios::out);
+    result << "\nResult: " << correct << "/" << NUM_Q << endl;
+    result << "Correct: " << correct << "\tWrong: " << NUM_Q - correct << endl;
+    result.close();
+    /*--------------------------------------------------------------------------*/
+
+    /*In kết quả ra màn hình*/
     cout << "Correct: " << correct << "/" << NUM_Q << endl;
     /*--------------------------------------------------------------------------*/
 
