@@ -1,4 +1,4 @@
-#include "../Inc/main.h"
+#include "Inc/main.h"
 /*
 choose index
 output: 20 vị trí trong bộ dữ liệu 100 câu hỏi
@@ -8,7 +8,7 @@ vector<int> choose()
     vector<int> select, result;
     srand(time(0));
     fstream shuffle;
-    shuffle.open("./Input/shuffle.txt", ios::in);
+    shuffle.open("Input/shuffle.txt", ios::in);
     int idx;
     for (int i = 0; i < NUM_Q / 4; i++)
     {
@@ -40,7 +40,7 @@ int math_test(vector<pair<string, string>> source, int i)
     string status;
     char answer;
     fstream result;
-    result.open("./Ouput/log/result.txt", ios::app);
+    result.open("Ouput/log/result.txt", ios::app);
 
     cout << "Nếu biểu thức đúng gõ 't', nếu sai gõ 'f'\nSau đó bấm phím Enter\n\n\n";
     cout << source[i].first << endl;
@@ -83,7 +83,7 @@ vocabulary test
 void vocab_test(vector<string> source, int i)
 {
     fstream result;
-    result.open("./Ouput/participant/000.txt", ios::app);
+    result.open("Ouput/participant/000.txt", ios::app);
     result << source[i] << '\n';
     result.close();
 
@@ -100,7 +100,7 @@ vector<pair<string, string>> get_equation()
 {
     vector<pair<string, string>> source;
     fstream source_equation;
-    source_equation.open("./Input/equation.txt", ios::in);
+    source_equation.open("Input/equation.txt", ios::in);
     while (!source_equation.eof())
     {
         string answer, equation;
@@ -117,7 +117,7 @@ get vocabulary source
 vector<string> get_vocab()
 {
     fstream vocab_source;
-    vocab_source.open("./Input/vocab.txt", ios::in);
+    vocab_source.open("Input/vocab.txt", ios::in);
     vector<string> source;
     while (!vocab_source.eof())
     {
