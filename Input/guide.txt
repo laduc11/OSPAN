@@ -1,0 +1,9 @@
+    Chào mừng bạn tới bài kiểm tra khả năng đa nhiệm.
+    Để kiểm tra khả năng đó, bạn sẽ làm bài kiểm tra gồm: 
+        20 câu hỏi toán học đúng sai
+        Ghi nhớ 20 từ vựng tiếng Anh và ghi lại theo đúng thứ tự.
+    Mỗi câu hỏi toán học bạn sẽ có 6 giây để đọc đề và đưa ra đáp án.
+    Mỗi từ vựng sẽ hiển thị trên màn hình trong 3 giây.
+    Sau khi chương trình kết thúc, bạn cần phải ghi lại những từ theo 
+đúng thứ tự ghi nhớ được vào file "vocab_answer.txt" mà chương trình cung 
+cấp. Mỗi từ nằm trên 1 dòng, hãy bỏ trống dòng có từ mà bạn không ghi nhớ.
