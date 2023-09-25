@@ -71,7 +71,7 @@ int math_test(vector<pair<string, string>> source, int i, int ID)
         cout << status << '\n';
     result << "Your answer: " << answer << '\n';
     result << "Solution: " << source[i].second << '\n';
-    result << "Status: " << status << '\n';
+    result << "Status: " << status << "\n\n";
     result.close();
     Sleep(DELAY_TIMER_S);
 

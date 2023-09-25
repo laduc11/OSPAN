@@ -14,6 +14,15 @@ int main()
 
     /*Đăng ký ID người tham gia*/
     const int ID = get_ID();
+    fstream result;
+    string file_name = "Output/participant/" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
+    result.open(file_name, ios::trunc | ios::out);
+    result << "ID: " << string(3 - to_string(ID).length(), '0') + to_string(ID) << "\n\n";
+    result.close();
+    file_name = "Output/log/result_" + string(3 - to_string(ID).length(), '0') + to_string(ID) + ".txt";
+    result.open(file_name, ios::trunc | ios::out);
+    result << "ID: " << string(3 - to_string(ID).length(), '0') + to_string(ID) << "\n\n";
+    result.close();
     /*--------------------------------------------------------------------------*/
 
     /*đảo thứ tự câu hỏi*/
