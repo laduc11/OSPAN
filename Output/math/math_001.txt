@@ -1,36 +1,36 @@
 ID: 001
 
-7 + 65 = 122
+44 + 27 = 4
 Your answer: t
 Solution: FALSE
-Status: TRUE
+Status: OVERTIME
 
-6 * 7 + 3 = 96
+6 * 4 + 8 = 92
 Your answer: f
 Solution: FALSE
 Status: FALSE
 
-60 + 73 = 18
+0 + 38 = 47
 Your answer: t
 Solution: FALSE
 Status: TRUE
 
-68 + 20 = 88
+44 + 33 = 77
 Your answer: f
 Solution: TRUE
 Status: FALSE
 
-28 + 70 = 98
+4 + 3 = 7
 Your answer: t
 Solution: TRUE
 Status: TRUE
 
-2 * 2 + 9 = 63
+9 * 7 + 4 = 1
 Your answer: f
 Solution: FALSE
 Status: FALSE
 
-24 + 42 = 47
+36 + 96 = 100
 Your answer: t
 Solution: FALSE
 Status: TRUE
@@ -40,63 +40,63 @@ Your answer: f
 Solution: TRUE
 Status: FALSE
 
-9 * 8 + 2 = 74
+3 * 5 + 2 = 17
 Your answer: t
 Solution: TRUE
 Status: TRUE
 
-5 * 7 + 6 = 96
+9 * 7 + 4 = 1
 Your answer: f
 Solution: FALSE
 Status: FALSE
 
-36 + 96 = 100
+6 + 78 = 93
 Your answer: t
 Solution: FALSE
 Status: TRUE
-
-4 * 5 + 3 = 23
-Your answer: t
-Solution: TRUE
-Status: TRUE
-
-4 * 5 + 3 = 23
-Your answer: t
-Solution: TRUE
-Status: TRUE
-
-36 + 96 = 100
-Your answer: f
-Solution: FALSE
-Status: FALSE
 
 2 * 5 + 5 = 15
+Your answer: f
+Solution: TRUE
+Status: FALSE
+
+3 * 8 + 7 = 31
 Your answer: t
 Solution: TRUE
 Status: TRUE
 
-9 * 5 + 6 = 32
+24 + 42 = 47
 Your answer: f
 Solution: FALSE
 Status: FALSE
 
-20 + 24 = 44
+6 * 1 + 6 = 12
 Your answer: t
 Solution: TRUE
 Status: TRUE
 
-8 * 9 + 4 = 87
-Your answer: t
+5 * 8 + 2 = 19
+Your answer: f
 Solution: FALSE
+Status: FALSE
+
+68 + 86 = 154
+Your answer: t
+Solution: TRUE
 Status: TRUE
+
+5 * 8 + 2 = 19
+Your answer: f
+Solution: FALSE
+Status: FALSE
+
+68 + 20 = 88
+Your answer: f
+Solution: TRUE
+Status: FALSE
 
 49 + 39 = 88
-Your answer: t
+Your answer: f
 Solution: TRUE
-Status: TRUE
-
-44 + 33 = 77
-Your answer: t
-Solution: TRUE
-Status: TRUE
+Status: FALSE
 

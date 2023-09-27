@@ -1,4 +1,0 @@
-ID: 000
-
-Kết quả bài kiểm tra ghi nhớ
-Correct: 0/20

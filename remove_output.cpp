@@ -1,11 +1,17 @@
-#include <windows.h>
-
-using namespace std;
+#include "Inc\main.h"
 
 int main()
 {
-    system("del Output/math/*.txt");
-    system("del Output/vocab/*.txt");
-    system("del Output/participant/*.txt");
+
+    string math = "Output/math/math_", vocab = "Output/vocab/vocab_", participant = "Output/participant/";
+    int ID = 0;
+    for (ID = 0; ID <= MAX_FILE; ID++)
+    {
+        string name = string(to_string(MAX_FILE).length() - to_string(ID).length(), '0') + to_string(ID);
+        unsigned int condition = remove((math + name + ".txt").c_str()) + remove((vocab + name + ".txt").c_str()) + remove((participant + name + ".txt").c_str());
+        if (!condition)
+            break;
+    }
+
     return 0;
 }

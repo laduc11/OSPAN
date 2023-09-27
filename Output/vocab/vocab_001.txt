@@ -1,22 +1,2 @@
 ID: 001
 
-student
-car
-family
-water
-point
-president
-system
-air
-parent
-body
-group
-others
-others
-group
-face
-city
-room
-team
-government
-eye
