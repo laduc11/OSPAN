@@ -117,8 +117,16 @@ int main()
     }
     /*--------------------------------------------------------------------------*/
 
+    /*Tạo báo cáo tổng kết ở định dạng file csv*/
+    file_name = "Output/summary_report.csv";
+    if (ID == 0)
+        create_report(file_name);
+    update_report(file_name, to_string(ID), to_string(correct), to_string(correct_word));
+    /*--------------------------------------------------------------------------*/
+
     /*Lời cảm ơn*/
-    cout << "Cảm ơn đã tham gia khảo sát\n";
+    cout
+        << "Cảm ơn đã tham gia khảo sát\n";
     /*--------------------------------------------------------------------------*/
 
     cout << "Press any key to finish . . .";

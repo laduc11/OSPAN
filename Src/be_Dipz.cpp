@@ -194,3 +194,23 @@ int check_vocab(string path1, string path2)
     file.close();
     return correct;
 }
+/*
+create summary report
+*/
+void create_report(string file_name)
+{
+    fstream report;
+    report.open(file_name, ios::out);
+    report << "ID,Correct equation,Correct word,Total question\n";
+    report.close();
+}
+/*
+update new runner to report
+*/
+void update_report(string file_name, string ID, string correct_equation, string correct_word)
+{
+    fstream report;
+    report.open(file_name, ios::app);
+    report << ID + "," + correct_equation + "," + correct_word + "," + to_string(NUM_Q) + "\n";
+    report.close();
+}

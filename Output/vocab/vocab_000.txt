@@ -1,0 +1,22 @@
+ID: 000
+
+part
+hour
+part
+area
+night
+game
+student
+air
+education
+line
+country
+party
+door
+woman
+war
+line
+job
+father
+study
+story

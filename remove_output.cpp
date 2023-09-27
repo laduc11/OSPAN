@@ -2,7 +2,6 @@
 
 int main()
 {
-
     string math = "Output/math/math_", vocab = "Output/vocab/vocab_", participant = "Output/participant/";
     int ID = 0;
     for (ID = 0; ID <= MAX_FILE; ID++)
