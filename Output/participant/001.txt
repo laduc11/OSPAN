@@ -1,5 +1,7 @@
 ID: 001
 
 Kết quả bài kiểm tra toán học
-Correct: 11/20
+Correct: 9/20
 
+Kết quả bài kiểm tra ghi nhớ
+Correct: 20/20

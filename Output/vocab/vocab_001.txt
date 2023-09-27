@@ -1,2 +1,22 @@
 ID: 001
 
+group
+kind
+part
+book
+issue
+end
+man
+research
+person
+line
+day
+air
+face
+group
+result
+team
+lot
+power
+story
+book
